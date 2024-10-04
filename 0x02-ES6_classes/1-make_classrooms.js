@@ -1,11 +1,9 @@
-export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
+import ClassRoom from './0-classroom';
 
-  if (trueOrFalse) {
-    const task = true;
-    const task2 = false;
-  }
-
-  return [task, task2];
+/**
+ * Creates an array of {@link ClassRoom}s with a specific size.
+ * @returns An array of {@link ClassRoom}s.
+ */
+export default function initializeRooms() {
+  return [19, 20, 34].map((size) => new ClassRoom(size));
 }

@@ -1,15 +1,13 @@
-export function taskFirst() {
-  const task = 'I prefer const when I can.';
-  return task;
-}
-
-export function getLast() {
-  return ' is okay';
-}
-
-export function taskNext() {
-  let combination = 'But sometimes let';
-  combination += getLast();
-
-  return combination;
+/**
+ * Represents a class room.
+ */
+export default class ClassRoom {
+  /**
+   * Creates a new @see {@link ClassRoom}.
+   * @param {Number} maxStudentsSize - The maximum number of
+   * students in the class.
+   */
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
 }
